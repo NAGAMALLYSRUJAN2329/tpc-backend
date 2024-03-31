@@ -14,6 +14,7 @@ import { RecruiterModule } from "./recruiter/recruiter.module";
 import { TpcMemberModule } from "./tpcMember/tpcMember.module";
 import { EmailService } from "./services/EmailService";
 import { AuthModule } from "./auth/auth.module";
+import { SalaryModule } from './salary/salary.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { AuthModule } from "./auth/auth.module";
     StudentModule,
     RecruiterModule,
     TpcMemberModule,
+    SalaryModule,
   ],
   controllers: [AppController, FlowerController],
   providers: [Logger, TransactionInterceptor, QueryInterceptor, AppService, UserService, EmailService],
